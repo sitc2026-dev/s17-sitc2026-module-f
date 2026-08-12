@@ -143,7 +143,7 @@ Every page has a site header. Show the **SwapLoop** name or logo clearly ([`asse
 
 #### Main navigation
 
-Every page has main navigation to all five pages. Use the navigation labels from the text file. Make the current page clear (for example with a visual style or `aria-current`), so visitors know where they are.
+Every page has main navigation to all five pages. Use the navigation labels from the text file. Make the current page clear so visitors know where they are.
 
 #### Footer
 
@@ -308,10 +308,6 @@ You may list the fictional partner names from the text file as examples only. Do
 
 Provide the static contact action from the text file (for example a `mailto:` link to `partners@swaploop.example`, or a contact form that does not send data). No JavaScript submit and no backend.
 
-### Harder CSS and animation
-
-These techniques are **required** (not a menu of choices). Mark each one with an HTML comment near the code (for example `<!-- sticky header -->`).
-
 #### Sticky site header
 
 The site header stays fixed (sticky) at the top of the viewport while the page scrolls, on all pages, at all three breakpoints.
@@ -334,7 +330,7 @@ On the For riders page, the pay-as-you-go prices use the desktop sticky behaviou
 
 #### Transitions and animations
 
-- Main navigation links and main buttons/links must have a visible hover transition and a visible focus transition (for example colour, underline, or background change over about `150ms`–`300ms`).
+- Main navigation links and main buttons/links must have a visible hover transition and a visible focus transition.
 - The Home hero must play a soft fade-in (or fade-up) entrance animation when the page loads.
 - When `prefers-reduced-motion: reduce` is set, turn off or simplify the hero entrance animation and any other non-essential motion. Hover/focus feedback may remain.
 
@@ -367,13 +363,12 @@ HTML/CSS validators may be used as extra evidence. Judgement marks follow the ma
 
 ## Mark distribution
 
-Draft mark plan (final details come with the marking scheme):
+| WSOS SECTION | Description | Points |
+| ------------ | ----------- | ------ |
+| 1 | Work organization and self-management | 1.5 |
+| 2 | Communication and interpersonal skills | 1 |
+| 3 | Design Implementation | 9.5 |
+| 4 | Front-End Development | 8 |
+| **Total** | | **20** |
 
-| WSOS SECTION | Description                           | Points  |
-| ------------ | ------------------------------------- | ------- |
-| 1            | Work organization and self-management | 5       |
-| 3            | Design Implementation                 | 70      |
-| 4            | Front-End Development                 | 25      |
-| **Total**    |                                       | **100** |
-
-Section 3 covers layout, responsive design, visual hierarchy, use of assets, transitions/animations, and CSS techniques. Section 4 covers semantic HTML, accessibility, and SEO. The exact marking aspects will be in the marking scheme.
+Section 3 covers layout, visual design, and content presentation. Section 4 covers responsive behaviour, required CSS techniques, motion, and structural front-end requirements. Exact aspects are in [`marking/marking-scheme.json`](./marking/marking-scheme.json).

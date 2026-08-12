@@ -1,1 +1,362 @@
-{}
+{
+  "totalMark": 20,
+  "wsosSections": {
+    "1": "Work organization and self-management",
+    "2": "Communication and interpersonal skills",
+    "3": "Design Implementation",
+    "4": "Front-End Development"
+  },
+  "subCriterions": [
+    {
+      "name": "Project structure and content",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Exactly five HTML pages are delivered and all are reachable from the main navigation",
+          "maxMark": 0.5,
+          "wsosSection": 1,
+          "extraDescription": "Test: Open the site and use the main nav. Confirm Home, How it works, Stations, For riders, and For fleets each load without broken internal links.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Required text from assets/texts/copy-deck.md is used for headlines, prices, and station details (not rewritten)",
+          "maxMark": 0.5,
+          "wsosSection": 1,
+          "extraDescription": "Test: Spot-check Home headline “Charge or swap — safely outside the home.”, PAYG prices ¥5/¥7/¥3/¥4, Partner starter ¥2,000 / 150 uses, and station name Haitang Garden East Gate with hours 00:00–24:00.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Provided logo, hero, station photos, icons, and favicon are referenced from assets/",
+          "maxMark": 0.25,
+          "wsosSection": 1,
+          "extraDescription": "Test: Inspect markup/network or page source for logo-swaploop, hero-home, station-haitang / canal-view / morning-bridge, icons, and favicon.svg.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Site functions with JavaScript disabled (HTML/CSS only)",
+          "maxMark": 0.25,
+          "wsosSection": 1,
+          "extraDescription": "Test: Disable JavaScript in the browser. Confirm pages still display, navigation links work, and CSS-only station tabs still switch content.",
+          "calculation": { "type": "pass-or-fail" }
+        }
+      ]
+    },
+    {
+      "name": "Common layout",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Every page has a “Skip to main content” link that jumps to the main content",
+          "maxMark": 0.25,
+          "wsosSection": 4,
+          "extraDescription": "Test: Tab to the first focusable control on each page and activate it. Focus/viewport moves to the main content area.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Every page has a header with the SwapLoop logo/name clearly visible",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "extraDescription": "Test: On each of the five pages, confirm the header shows SwapLoop via assets/images/logo-swaploop.svg or equivalent clear brand text.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Main navigation links to all five pages and indicates the current page",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: From each page, confirm nav links to all five destinations. Current page is visually distinct from the other nav items.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Footer includes pilot credit, rider-app line, and links to For riders and For fleets",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Check footer text against copy-deck Footer section and confirm working links to For riders and For fleets.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Site header is sticky on scroll on all pages at all breakpoints",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "Test: Scroll a long page at mobile, tablet, and desktop widths. Header remains fixed/sticky at the top.",
+          "calculation": { "type": "pass-or-fail" }
+        }
+      ]
+    },
+    {
+      "name": "Home page",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Hero shows brand, required headline, supporting sentence, For riders and For fleets links, and hero image with provided alt text",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "extraDescription": "Test: Before scrolling Home, confirm brand, copy-deck headline/support, both CTAs, hero-home.jpg, and the provided hero alt text.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Home includes why outdoor charging, three-step preview linking to How it works, and Haitang station teaser linking to Stations",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "extraDescription": "Test: Below the hero, confirm the three lower sections use copy-deck wording and the preview/teaser links open How it works and Stations.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Home hero has a soft fade-in or fade-up entrance animation on load",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "Test: Reload Home and observe a soft entrance animation on the hero. Animation must not depend on JavaScript if CSS can provide it.",
+          "calculation": { "type": "pass-or-fail" }
+        }
+      ]
+    },
+    {
+      "name": "How it works page",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "How it works page includes intro, safety note, and rider-app line from the text file",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Confirm intro, safety note, and rider-app line match copy-deck How it works section.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Three steps are a horizontal timeline on desktop and a vertical timeline on mobile/tablet",
+          "maxMark": 1.0,
+          "wsosSection": 4,
+          "extraDescription": "Test: At ≥1024px width, steps are arranged horizontally as a timeline. Below 1024px, steps stack vertically as a timeline. Content matches the three copy-deck steps.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Comparison of swap vs charge shows SL-48/SL-60 and GB-AC-48/GB-AC-60 from the text file",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Table or two-column comparison includes both routes and the exact compatibility codes from copy-deck.",
+          "calculation": { "type": "pass-or-fail" }
+        }
+      ]
+    },
+    {
+      "name": "Stations page",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Station types SWAP / CHARGING / HYBRID are presented as CSS-only tabs with icons",
+          "maxMark": 1.0,
+          "wsosSection": 4,
+          "extraDescription": "Test: With JavaScript disabled, switch between the three type tabs. Only the selected type content shows. Icons from assets/icons are used.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Exactly three featured stations show photo, type, address, hours, who-it-is-for text, and provided alt text",
+          "maxMark": 1.0,
+          "wsosSection": 3,
+          "extraDescription": "Test: Confirm Haitang (HYBRID 00:00–24:00), Canal View (SWAP 05:00–23:30), Morning Bridge (CHARGING 06:00–22:00) with matching images and copy-deck fields. No invented live slot counts.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "On desktop, each featured station uses an overlapping or edge-bleed image layout; mobile/tablet use stacked layout",
+          "maxMark": 1.0,
+          "wsosSection": 4,
+          "extraDescription": "Test: At ≥1024px, station photo overlaps text or bleeds to the content edge. Below 1024px, image and text are stacked.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Coverage section uses the “not yet covered” wording from the text file",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "extraDescription": "Test: Coverage text matches copy-deck and does not call uncovered areas unsafe or non-compliant.",
+          "calculation": { "type": "pass-or-fail" }
+        }
+      ]
+    },
+    {
+      "name": "For riders page",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Pay-as-you-go table shows exact prices ¥5 / ¥7 / ¥3 / ¥4 for SL-48 / SL-60 / GB-AC-48 / GB-AC-60",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Compare the four price rows to copy-deck For riders PAYG table.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "On desktop, the price table or price block stays sticky while scrolling For riders content",
+          "maxMark": 0.75,
+          "wsosSection": 4,
+          "extraDescription": "Test: At ≥1024px, scroll the For riders page. Price table or comparison block (column or header) remains sticky/visible.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "For riders includes pay-per-use line, Alipay line, compatibility checklist, and rider-app link from the text file",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Confirm those four content blocks match copy-deck. No real payment form.",
+          "calculation": { "type": "pass-or-fail" }
+        }
+      ]
+    },
+    {
+      "name": "For fleets page",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Partner starter and Partner fleet show exact base fees, included uses, and overage rates",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Starter ¥2,000 / 150 / ¥6; Fleet ¥5,000 / 400 / ¥5 — match copy-deck.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Volume discount bands for both plans match the text file",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Fleet 0–499 0%, 500–999 10%, 1000+ 20%; Starter 0–199 0%, 200–399 5%, 400+ 15%.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Priority windows text includes 11:00–14:00 and 17:00–20:00 and states priority never skips safety/compatibility",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Priority section matches copy-deck meaning and example hours.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Funding line and static contact action (mailto or non-submitting form) are present",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "extraDescription": "Test: Funding sentence from copy-deck is visible. Contact uses mailto:partners@swaploop.example or a form that does not send with JavaScript/backend.",
+          "calculation": { "type": "pass-or-fail" }
+        }
+      ]
+    },
+    {
+      "name": "Responsive design",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Layout is clearly distinct below 768px (mobile)",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "Test: Resize to a width below 768px. Common chrome and page layouts adapt (e.g. stacked nav/content).",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Layout is clearly distinct at 768px–1023px (tablet)",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "Test: Resize to a width in 768–1023px. Layout differs from both mobile and desktop.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Layout is clearly distinct at 1024px and above (desktop)",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "Test: Resize to ≥1024px. Multi-column / desktop arrangements appear where required (timeline, station overlap, sticky prices).",
+          "calculation": { "type": "pass-or-fail" }
+        }
+      ]
+    },
+    {
+      "name": "Transitions and reduced motion",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Main navigation and main buttons/links have visible hover and focus transitions",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "Test: Hover and keyboard-focus primary nav items and main CTAs. A visible transition occurs (not an instant hard cut only).",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "prefers-reduced-motion: reduce disables or simplifies the hero entrance and other non-essential motion",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "Test: Enable reduced motion in OS/browser. Reload Home — hero entrance and non-essential animations are off or simplified. Hover/focus feedback may remain.",
+          "calculation": { "type": "pass-or-fail" }
+        }
+      ]
+    },
+    {
+      "name": "Accessibility and SEO",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Each page has one h1 matching the page topic and uses header, nav, main, and footer landmarks",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "Test: Inspect each page for a single topical h1 and the four landmarks.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Informative images use provided alt text; focus styles are visible; colour is not the only station-type or plan cue",
+          "maxMark": 0.5,
+          "wsosSection": 2,
+          "extraDescription": "Test: Compare image alts to copy-deck. Tab through controls for visible focus. Station types and plans also use text and/or icons.",
+          "calculation": { "type": "pass-or-fail" }
+        },
+        {
+          "type": "measurement",
+          "description": "Each page has unique title and meta description from the text file; Home has Open Graph tags; favicon is present",
+          "maxMark": 0.5,
+          "wsosSection": 2,
+          "extraDescription": "Test: Check document title and meta description per page against copy-deck. Home has og:title, og:description, og:image (og-default.jpg). Favicon.svg is linked.",
+          "calculation": { "type": "pass-or-fail" }
+        }
+      ]
+    },
+    {
+      "name": "Visual design",
+      "aspects": [
+        {
+          "type": "judgement",
+          "description": "Overall visual design quality and brand clarity across the five pages",
+          "maxMark": 1.0,
+          "wsosSection": 3,
+          "judgementScoreDescription": [
+            "Level 0: Little or no coherent design; brand is unclear; pages feel unfinished or inconsistent.",
+            "Level 1: Basic readable layout with some brand presence, but weak hierarchy, spacing, or consistency.",
+            "Level 2: Clear brand, consistent chrome, readable hierarchy, and solid layout on most pages.",
+            "Level 3: Strong, polished visual system; SwapLoop brand is immediately clear; consistent spacing, typography, and section design throughout."
+          ]
+        },
+        {
+          "type": "judgement",
+          "description": "Layout craft for required special sections (timeline, tabs, station cards, pricing, fleets comparison)",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "judgementScoreDescription": [
+            "Level 0: Special sections are missing, broken, or barely usable.",
+            "Level 1: Required sections exist but look crude or hard to scan.",
+            "Level 2: Special sections are clear and usable with good structure at the main breakpoints.",
+            "Level 3: Special sections are well crafted, easy to scan, and feel intentional on mobile, tablet, and desktop."
+          ]
+        }
+      ]
+    }
+  ]
+}

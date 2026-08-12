@@ -1,21 +1,25 @@
-# SwapLoop Public Website — Module F
+# SwapLoop Public Website
 
-Build a responsive, accessible multi-page marketing site for the fictional SwapLoop Shanghai e-bike energy pilot using **HTML and CSS only** (CSS frameworks allowed; no JavaScript).
+Build a responsive five-page public website for the fictional SwapLoop Shanghai e-bike energy pilot using **HTML and CSS only** (CSS frameworks allowed; no JavaScript). Competitors use provided text and assets for Home, How it works, Stations, For riders, and For fleets, with fixed breakpoints, accessibility, SEO, and required CSS techniques.
 
 ## Skill domain(s)
 
 - Web Technologies
 
-## Task Origin
+## Task origin
 
-This project task is based on the **Skills IT Training Camp 2026** competition **Module F** test project authored by **Zoltan Sisak**, within the SwapLoop ecosystem shared with Modules B–D. The task was prepared for the Erasmus+ **"Marketable IT Skills: Integrating Real-World Challenges into Vocational Education"** project.
+This project task is based on the **Skills IT Training Camp 2026 (SITC 2026)** **Skill 17 – Web Technologies, Module F – SwapLoop Public Website** test project authored by **Zoltan Sisak**. The training camp prepares competitors for WorldSkills Shanghai 2026.
+
+The task was modularized and standardized for the Erasmus+ **"Marketable IT Skills: Integrating Real-World Challenges into Vocational Education"** project.
 
 ## Content
 
 - [Project Description](project-description.md)
+- [Provided text](assets/texts/copy-deck.md)
 - [Assets](assets/)
-- [Marking scheme](marking/marking-scheme.json)
+- [Assets overview](assets/README.md)
+- [Marking Scheme](marking/marking-scheme.json)
 
-## About the Project
+## About the project
 
-This repository is part of the **"Marketable IT Skills: Integrating Real-World Challenges into Vocational Education"** (MITS) project. The project is supported by the **Erasmus+ programme** of the European Union. It is coordinated by the **HTTP Foundation** (Hungary) in cooperation with the partner institution **Helsinki Business College OY** (Finland). The primary goal of the project is to support IT vocational education by providing a collection of project tasks and a web application with an evaluation support system. These tasks aim to reflect labor market expectations, simulate real workplace challenges, and support talent management. The project's task collection draws upon competition materials of WorldSkills, EuroSkills and different national and international competition. The web application is being developed as part of the project activities.
+This repository is part of the **"Marketable IT Skills: Integrating Real-World Challenges into Vocational Education"** (MITS) project. The project is supported by the **Erasmus+ programme** of the European Union. It is coordinated by the **HTTP Foundation** (Hungary) in cooperation with the partner institution **Helsinki Business College OY** (Finland). The primary goal of the project is to support IT vocational education by providing a collection of project tasks and a web application with an evaluation support system. These tasks aim to reflect labor market expectations, simulate real workplace challenges, and support talent management. The project's task collection draws upon competition materials of WorldSkills, EuroSkills and different national and international competitions. The web application is being developed as part of the project activities.
