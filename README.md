@@ -1,6 +1,6 @@
-# Title of the Project
+# SwapLoop Public Website — Module F
 
-descriptive-title-of-the-project
+Build a responsive, accessible multi-page marketing site for the fictional SwapLoop Shanghai e-bike energy pilot using **HTML and CSS only** (CSS frameworks allowed; no JavaScript).
 
 ## Skill domain(s)
 
@@ -8,12 +8,13 @@ descriptive-title-of-the-project
 
 ## Task Origin
 
-This project task is based on test projects based on the **competition-name** competition **module-name test project** submitted by **name-of-the-test-project-writer(s)**. The original task was updated, modularized, and standardized to form the basis of the project task repository within the Erasmus+ **"Marketable IT Skills: Integrating Real-World Challenges into Vocational Education"** project.
+This project task is based on the **Skills IT Training Camp 2026** competition **Module F** test project authored by **Zoltan Sisak**, within the SwapLoop ecosystem shared with Modules B–D. The task was prepared for the Erasmus+ **"Marketable IT Skills: Integrating Real-World Challenges into Vocational Education"** project.
 
 ## Content
 
 - [Project Description](project-description.md)
-- [Media Files](tree/main/src/assets)
+- [Assets](assets/)
+- [Marking scheme](marking/marking-scheme.json)
 
 ## About the Project
 
