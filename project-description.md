@@ -363,12 +363,12 @@ HTML/CSS validators may be used as extra evidence. Judgement marks follow the ma
 
 ## Mark distribution
 
-| WSOS SECTION | Description | Points |
-| ------------ | ----------- | ------ |
-| 1 | Work organization and self-management | 1.5 |
-| 2 | Communication and interpersonal skills | 1 |
-| 3 | Design Implementation | 9.5 |
-| 4 | Front-End Development | 8 |
-| **Total** | | **20** |
+| WSOS SECTION | Description                            | Points |
+| ------------ | -------------------------------------- | ------ |
+| 1            | Work organization and self-management  | 1.5    |
+| 2            | Communication and interpersonal skills | 1      |
+| 3            | Design Implementation                  | 9.5    |
+| 4            | Front-End Development                  | 8      |
+| **Total**    |                                        | **20** |
 
-Section 3 covers layout, visual design, and content presentation. Section 4 covers responsive behaviour, required CSS techniques, motion, and structural front-end requirements. Exact aspects are in [`marking/marking-scheme.json`](./marking/marking-scheme.json).
+Section 3 covers layout, visual design, and content presentation. Section 4 covers responsive behaviour, required CSS techniques, motion, and structural front-end requirements.
